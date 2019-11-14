@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-WORKING_DIRECTORY="${INPUT_WORKING_DIRECTORY:-./}"
+env
+WORKING_DIRECTORY="${INPUT_WORKING-DIRECTORY:-./}"
 cd "${WORKING_DIRECTORY}";
 
 bazel "$@"
