@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 env
 WORKING_DIRECTORY="${INPUT_WORKING-DIRECTORY:-./}"
