@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-env
 WORKING_DIRECTORY="${INPUT_WORKING_DIRECTORY:-./}"
-CC_COMPILE="${INPUT_CC_COMPILE:-gcc}"
+export CC_COMPILE="${INPUT_CC_COMPILE:-gcc}"
+env
+
 cd "${WORKING_DIRECTORY}";
 
-CC_COMPILE=$CC_COMPILE bazel "$@"
+bazel "$@"
